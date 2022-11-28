@@ -6,7 +6,7 @@ pragma solidity ^0.4.24;
  */
 library Roles {
   struct Role {
-    mapping (address => bool) bearer;
+    mapping(address => bool) bearer;
   }
 
   /**
@@ -33,11 +33,10 @@ library Roles {
    * @dev check if an account has this role
    * @return bool
    */
-  function has(Role storage role, address account)
-    internal
-    view
-    returns (bool)
-  {
+  function has(
+    Role storage role,
+    address account
+  ) internal view returns (bool) {
     require(account != address(0));
     return role.bearer[account];
   }
