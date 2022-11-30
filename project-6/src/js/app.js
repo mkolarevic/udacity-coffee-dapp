@@ -39,19 +39,21 @@ App = {
         App.consumerID = $("#consumerID").val();
 
         console.log(
-            App.sku,
-            App.upc,
-            App.ownerID,
-            App.originFarmerID,
-            App.originFarmName,
-            App.originFarmInformation,
-            App.originFarmLatitude,
-            App.originFarmLongitude,
-            App.productNotes,
-            App.productPrice,
-            App.distributorID,
-            App.retailerID,
-            App.consumerID
+            {
+                sku: App.sku,
+                upc: App.upc,
+                ownerID: App.ownerID,
+                originFarmerID: App.originFarmerID,
+                originFarmName: App.originFarmName,
+                originFarmInformation: App.originFarmInformation,
+                originFarmLatitude: App.originFarmLatitude,
+                originFarmLongitude: App.originFarmLongitude,
+                productNotes: App.productNotes,
+                productPrice: App.productPrice,
+                distributorID: App.distributorID,
+                retailerID: App.retailerID,
+                consumerID: App.consumerID
+            }
         );
     },
 
